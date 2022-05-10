@@ -1,0 +1,59 @@
+@import "variables";
+
+.footer {
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: $color_footer;
+    font-family: $tipografia_texto;;
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+
+    .column {
+       
+        margin: 0px 20px 0px 20px;
+        padding: 20px 5px;
+        text-align: center;
+        
+        
+        .footer__titulo {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.footer__logos {
+    display: block;
+    padding: 5px;
+}
+
+
+.fa-facebook-official {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+
+
+
+
+ /*Media Queries*/ 
+ @media (min-width: 576px){
+    .column {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer__logos {
+        display: inline-block;
+    }
+}
+
+
+

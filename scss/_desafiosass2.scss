@@ -1,0 +1,87 @@
+/*Variables*/
+$titulo-color: white;
+
+
+
+/*Mapas para el desafío*/
+
+/*Mapa Uno*/
+$color_secciones: (
+    titulo__general: #FFFFFF,
+    texto--titulo: #E72E2C,
+    texto: #8A5D5D
+);
+
+
+
+
+/*Bucle para uso del mapa */
+@each $seccion, $color in $color_secciones {
+
+    .intro-main__contenido__#{$seccion} {
+        color:$color;
+    }
+
+}
+
+/*Mapa Dos*/
+
+$estilos_lista: (
+   tamaño-texto: 15px,
+    peso-texto: 700,
+    color-texto: blue,
+    decoracion:none,
+    mayuscula:uppercase,
+    alineacion:right
+    
+);
+
+.intro__main__lista__titulo {
+    font-size:map-get($estilos_lista, tamaño-texto);
+    text-transform:map-get($estilos_lista, mayuscula);
+    color:map-get($estilos_lista, color-texto);
+    text-decoration: map-get($estilos_lista, decoracion);
+    font-weight: map-get($estilos_lista, peso-texto);
+    text-align: map-get($estilos_lista, alineacion);
+}
+
+
+/*Extend para el desafío*/
+
+.intro-main__contenido2 {
+    background-color:#E72E2C;
+    color:$titulo-color;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.intro-main__contenido2--texto {
+    @extend .intro-main__contenido2;
+    font-size: 15px;
+    text-align: left;
+    padding:2% 3%;
+}
+
+
+/*Mixin para el desafío*/
+
+@mixin tamaño($width, $height) {
+    height: $height;
+    width: $width;
+ }
+
+ .video_youtube {
+    @include tamaño(100%, 600px);
+ }
+ 
+
+
+
+
+
+
+
+
+

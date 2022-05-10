@@ -1,0 +1,401 @@
+@import "variables";
+
+@mixin size_img ($alto, $ancho){
+    height:$alto;
+    width:$ancho;
+} 
+
+
+main {
+    width:95%;
+    margin:0 auto;
+}
+
+
+/* Titulo Home General*/
+.titulo_general_mobile {
+    color:$color_titulo_general;
+    font-size: $tamaño_titulo_general_mobile;    
+    font-weight: 500;
+    text-shadow: 1px 1px #A0A2A3;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+.titulo_general {
+    color:$color_titulo_general;
+    font-size: $tamaño_titulo_general;    
+    font-weight: 500;
+    text-shadow: 1px 1px #A0A2A3;
+    
+}
+
+
+.intro-main__contenido__titulo__general {
+    background-color:$bgcolor_titulo;
+    text-transform: uppercase;
+    text-align: center;
+    color:$color_titulo;
+    margin-bottom: 15px;
+    padding: 18px;
+    font-family: $tipografia_titulo;
+    font-size: $tamaño_titulo;
+    }
+
+   
+
+.titulos {
+    text-align: center;
+    animation-name: animate-titulos;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+
+}
+
+    
+
+.intro-main__contenido__texto--titulo {
+    line-height: 1.6;
+    font-family: $tipografia_subtitulos;
+    font-size: $tamaño_subtitulos_mobile;
+    color: $color_subtitulos;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding-top: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.intro-main__contenido__texto {
+    line-height: 1.6;
+    font-family: $tipografia_texto;
+    font-size: $tamaño_texto;
+    color:$color_texto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    
+} 
+
+
+/*NOVEDADES*/
+
+#contenedor_novedades {
+    background-color: $bgcolor_novedades;
+    width:100%;
+
+    #contenedor_novedades_imagenes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+
+        .contenedor_novedades__card {
+            margin: 1% 3px;
+            background-color:$bgcolor_cards;
+            border-radius: 2%;
+            font-size: 10px;
+            max-width: 40%;
+            text-align: center;
+        }
+    }
+}
+
+
+.contenedor_novedades__card:hover {
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+/*PUBLICACIONES*/
+
+#publicaciones {
+    justify-content: space-around;
+    background-color: $bgcolor_publicaciones;
+    padding: 2% 1.5%;   
+  
+}
+
+.publicaciones_lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 0;
+    
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.publicaciones_links {
+    color: black;
+    text-decoration: none;
+    margin: 5% 2px;
+   
+}
+
+.publicaciones_links:hover {
+    text-decoration: underline;   
+}
+
+
+/* Futuros Proyectos */
+
+.intro-main__contenido2 {
+    background-color: $bgcolor_proyectos;
+    opacity: 0.95;
+    font-family: $tipografia_texto;
+    text-align: center;
+    color:$color_publicaciones;
+}
+
+
+    .intro-main__contenido2--texto{
+        background-color: $bgcolor_proyectos_texto;
+       
+        line-height: 1.6;
+        font-size: $tamaño_texto;
+        font-family: $tipografia_texto;
+        color:$color_texto;
+        font-weight: 400;
+
+    }
+
+
+/* Pregrado*/
+
+.img_foto_tres {
+    display: none;
+    
+}
+
+.img_foto_uno {
+    @include size_img(100%,100%);
+    margin:1% 0.5%;
+    
+
+}
+
+.img_foto_dos {
+    @include size_img(100%,100%);
+    margin:1% 0.5%;
+}
+
+
+@media (min-width: 576px){
+    
+    .row__imagenes__tres {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img_foto_tres  {
+        @include size_img(100%,100%);
+        margin:1% 0;
+        display: block;
+        
+    }
+}
+
+/* Capacitacion */
+.img_foto_cuatro {
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+   
+    display: inline-block;
+    text-align: center;
+    background: url(Imagenes/equipo_hospital_4.jpg);
+    transition: all 1s ease;
+}
+
+/*
+.img_foto_seis {
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+   
+    display: inline-block;
+    text-align: center;
+    background: url(Imagenes/equipo_hospital_5.jpg);
+    transition: all 1s ease;
+}
+
+
+
+.img_foto_cuatro:hover {
+  
+    background: url(Imagenes/logo_dbv.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.img_foto_cinco:hover {
+   
+    background: url(Imagenes/logo_municipio_de_tandil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img_foto_seis:hover {
+    
+    background: url(Imagenes/logo_sisp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+
+*/
+
+/*Biblioteca*/
+
+.convenios__texto {
+    font-family: $tipografia_texto;
+    font-size: $tamaño_texto_convenio_1;
+    margin:2% 0;
+}
+
+.convenios_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    @include size_img(80%,100%);
+}
+
+.convenios {
+    padding: 2% 3%;
+    
+}
+
+.img__convenio {
+    @include size_img(80%,100%);
+    
+}
+
+/* Comunidad */
+
+.comunidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.row__textoCostado {
+@extend .intro-main__contenido__texto ;
+}
+
+.row__comunidad__titulo {
+    @extend .intro-main__contenido__texto--titulo ; 
+}
+
+
+
+/* VIDEO */
+
+
+.video_youtube {
+    @include size_img(200px,100%);
+}
+
+
+
+
+/*Media Queries para Desktop*/
+@media (min-width: 576px){
+    .video_youtube {
+        @include size_img(600px,100%);
+    }
+
+    .convenios__texto {
+        font-family: $tipografia_texto;
+        font-size: $tamaño_texto_convenio;
+        margin:2% 0;
+    }
+
+    .img_foto {
+        width:50% ;
+        height: 100%;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .img_foto--right {
+        float: right;
+        margin-left: 20px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .row--comunidad {
+        margin: 30px auto;
+        height: 400px;
+    }
+    
+    .row__textoCostado {
+       font-size: 15px;
+       font-weight: 400;
+       text-align: justify;
+       margin-left: 0 auto;
+       line-height: 1.5rem;
+         
+    }
+
+    #contenedor_novedades {
+        background-color: $bgcolor_novedades;
+        width:100%;
+    
+        #contenedor_novedades_imagenes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+    
+            .contenedor_novedades__card {
+                margin: 1% 3px;
+                background-color:$bgcolor_cards;
+                border-radius: 2%;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .publicaciones_lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2% 0;
+        font-size: 15px;
+    }
+    
+    .intro-main__contenido__texto--titulo {
+        line-height: 1.6;
+        font-family: $tipografia_subtitulos;
+        font-size: $tamaño_subtitulos;
+        color: $color_subtitulos;
+        text-transform: uppercase;
+        margin-top: 30px;
+        font-weight: 700;
+    }
+
+    .titulo_general_mobile {
+        display: none;
+    }
+
+    .titulo_general_mobile_dos {
+        display: none;
+    }
+    
+
+}

@@ -115,7 +115,7 @@ li {
 
  .intro__main__lista {
     display: inline-block;
-    padding: 5px  7rem;
+    padding: 5px  10%;
  }   
             
 .intro__main__lista__titulo {
@@ -123,18 +123,25 @@ li {
     text-transform: uppercase;
     color:#df0024;
     text-decoration: underline;
+    text-align: center;
 }
 
             .intro__main__lista--items {
                 list-style-type: none;
                 line-height: 1.7;
                 margin-top: 7px;
+                text-align: center;
+                    li {
+                        text-align: center;
+                        margin:0 auto;
+                    }
             }
         
 
         .intro__main__lista2 {
             display: inline-block;
-            padding: 5px  4rem;  
+            padding: 5px ;  
+            text-align: center;
         }
 
 

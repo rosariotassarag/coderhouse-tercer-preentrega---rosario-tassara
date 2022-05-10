@@ -82,7 +82,7 @@ main {
 }
 #contenedor_novedades #contenedor_novedades_imagenes .contenedor_novedades__card {
   margin: 1% 3px;
-  background-color: #D7DBDD;
+  background-color: #2C3383;
   border-radius: 2%;
   font-size: 10px;
   max-width: 40%;
@@ -98,7 +98,6 @@ main {
 #publicaciones {
   justify-content: space-around;
   background-color: #2C3383;
-  padding: 2% 1.5%;
 }
 
 .publicaciones_lista {
@@ -131,10 +130,11 @@ ul {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
+  font-size: 23px;
+  font-weight: 200;
 }
 
 .intro-main__contenido2--texto {
-  background-color: #F2F3F4;
   line-height: 1.6;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -179,7 +179,7 @@ ul {
   height: 300px;
   display: inline-block;
   text-align: center;
-  background: url(Imagenes/equipo_hospital_4.jpg);
+  background: url(imagenes/equipo_hospital_4.jpg);
   transition: all 1s ease;
 }
 
@@ -191,7 +191,7 @@ ul {
 
     display: inline-block;
     text-align: center;
-    background: url(Imagenes/equipo_hospital_5.jpg);
+    background: url(imagenes/equipo_hospital_5.jpg);
     transition: all 1s ease;
 }
 
@@ -199,7 +199,7 @@ ul {
 
 .img_foto_cuatro:hover {
 
-    background: url(Imagenes/logo_dbv.png);
+    background: url(imagenes/logo_dbv.png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -207,14 +207,14 @@ ul {
 
 .img_foto_cinco:hover {
 
-    background: url(Imagenes/logo_municipio_de_tandil.jpg);
+    background: url(imagenes/logo_municipio_de_tandil.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img_foto_seis:hover {
 
-    background: url(Imagenes/logo_sisp.png);
+    background: url(imagenes/logo_sisp.png);
     background-repeat: no-repeat;
     background-position: center;
 }  
@@ -533,6 +533,7 @@ header {
   z-index: 1;
   text-align: center;
   background-color: #dc3545;
+  font-family: "Montserrat", sans-serif;
 }
 header .img_logo {
   display: inline-block;

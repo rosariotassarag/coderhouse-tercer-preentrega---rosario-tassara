@@ -4,8 +4,8 @@
     line-height: 1.6;
     font-size: 13px;
     font-weight: 400;
-    background-color: $color_footer;
-    font-family: $tipografia_texto;;
+    background-color: map-get($color, color_footer);;
+    font-family: $tipografia_texto;
     color: white;
     margin: 0px auto;
     text-align: center;

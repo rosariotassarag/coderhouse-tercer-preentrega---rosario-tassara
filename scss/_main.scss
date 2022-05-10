@@ -5,6 +5,14 @@
     width:$ancho;
 } 
 
+$color: (color_header: #dc3545, 
+         color_footer: #2C3383,
+         color_novedades:#2C3383,
+         color_proyectos:#dc3545,
+         color_cards:#D7DBDD,
+         color_titulo: #2C3383,
+         color_publicaciones:#2C3383 );
+
 
 main {
     width:95%;
@@ -33,7 +41,7 @@ main {
 
 
 .intro-main__contenido__titulo__general {
-    background-color:$bgcolor_titulo;
+    background-color:map-get($color, color_titulo);
     text-transform: uppercase;
     text-align: center;
     color:$color_titulo;
@@ -84,7 +92,7 @@ main {
 /*NOVEDADES*/
 
 #contenedor_novedades {
-    background-color: $bgcolor_novedades;
+    background-color:map-get($color, color_novedades);
     width:100%;
 
     #contenedor_novedades_imagenes{
@@ -95,7 +103,7 @@ main {
 
         .contenedor_novedades__card {
             margin: 1% 3px;
-            background-color:$bgcolor_cards;
+            background-color:map-get($color, color_novedades);
             border-radius: 2%;
             font-size: 10px;
             max-width: 40%;
@@ -114,8 +122,7 @@ main {
 
 #publicaciones {
     justify-content: space-around;
-    background-color: $bgcolor_publicaciones;
-    padding: 2% 1.5%;   
+    background-color:map-get($color, color_publicaciones);   
   
 }
 
@@ -149,17 +156,18 @@ ul {
 /* Futuros Proyectos */
 
 .intro-main__contenido2 {
-    background-color: $bgcolor_proyectos;
+    background-color: map-get($color, color_proyectos);
     opacity: 0.95;
     font-family: $tipografia_texto;
     text-align: center;
     color:$color_publicaciones;
+    font-size: $tamaño_texto_proyectos;
+    font-weight: 200;
 }
 
 
     .intro-main__contenido2--texto{
-        background-color: $bgcolor_proyectos_texto;
-       
+        background-color: map-get($color, color_proyectos_texto);
         line-height: 1.6;
         font-size: $tamaño_texto;
         font-family: $tipografia_texto;
@@ -212,7 +220,7 @@ ul {
    
     display: inline-block;
     text-align: center;
-    background: url(Imagenes/equipo_hospital_4.jpg);
+    background: url(imagenes/equipo_hospital_4.jpg);
     transition: all 1s ease;
 }
 
@@ -224,7 +232,7 @@ ul {
    
     display: inline-block;
     text-align: center;
-    background: url(Imagenes/equipo_hospital_5.jpg);
+    background: url(imagenes/equipo_hospital_5.jpg);
     transition: all 1s ease;
 }
 
@@ -232,7 +240,7 @@ ul {
 
 .img_foto_cuatro:hover {
   
-    background: url(Imagenes/logo_dbv.png);
+    background: url(imagenes/logo_dbv.png);
     background-repeat: no-repeat;
     background-position: center;
     
@@ -240,14 +248,14 @@ ul {
 
 .img_foto_cinco:hover {
    
-    background: url(Imagenes/logo_municipio_de_tandil.jpg);
+    background: url(imagenes/logo_municipio_de_tandil.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img_foto_seis:hover {
     
-    background: url(Imagenes/logo_sisp.png);
+    background: url(imagenes/logo_sisp.png);
     background-repeat: no-repeat;
     background-position: center;
 }  
@@ -352,7 +360,7 @@ ul {
     }
 
     #contenedor_novedades {
-        background-color: $bgcolor_novedades;
+        background-color: map-get($color, color_novedades);
         width:100%;
     
         #contenedor_novedades_imagenes{
@@ -363,7 +371,7 @@ ul {
     
             .contenedor_novedades__card {
                 margin: 1% 3px;
-                background-color:$bgcolor_cards;
+                background-color:map-get($color, color_cards);
                 border-radius: 2%;
                 font-size: 20px;
                 text-align: center;

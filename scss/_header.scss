@@ -6,7 +6,8 @@ header {
     top:0;
     z-index: 1;
     text-align: center;
-    background-color: $color_header;
+    background-color: map-get($color, color_header);
+    font-family: $tipografia_texto;
 
         .img_logo {
             display: inline-block;
